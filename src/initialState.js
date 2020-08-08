@@ -5,71 +5,57 @@ export default initialState = {
       {
         name: "Sunday",
         shortName: "Sun",
-        meals: {
-          breakfast: ["", ""],
-          lunch: ["", ""],
-          dinner: ["", ""]
-        },
-        snacks: ["", ""]
+        breakfastItems: ["", ""],
+        lunchItems: ["", ""],
+        dinnerItems: ["", ""],
+        snackItems: ["", ""]
       },
       {
         name: "Monday",
         shortName: "Mon",
-        meals: {
-          breakfast: ["", ""],
-          lunch: ["", ""],
-          dinner: ["", ""]
-        },
-        snacks: ["", ""]
+        breakfastItems: ["", ""],
+        lunchItems: ["", ""],
+        dinnerItems: ["", ""],
+        snackItems: ["", ""]
       },
       {
         name: "Tuesday",
         shortName: "Tues",
-        meals: {
-          breakfast: ["", ""],
-          lunch: ["", ""],
-          dinner: ["", ""]
-        },
-        snacks: ["", ""]
+        breakfastItems: ["", ""],
+        lunchItems: ["", ""],
+        dinnerItems: ["", ""],
+        snackItems: ["", ""]
       },
       {
         name: "Wednesday",
         shortName: "Wed",
-        meals: {
-          breakfast: ["", ""],
-          lunch: ["", ""],
-          dinner: ["", ""]
-        },
-        snacks: ["", ""]
+        breakfastItems: ["", ""],
+        lunchItems: ["", ""],
+        dinnerItems: ["", ""],
+        snackItems: ["", ""]
       },
       {
         name: "Thursday",
         shortName: "Thur",
-        meals: {
-          breakfast: ["", ""],
-          lunch: ["", ""],
-          dinner: ["", ""]
-        },
-        snacks: ["", ""]
+        breakfastItems: ["", ""],
+        lunchItems: ["", ""],
+        dinnerItems: ["", ""],
+        snackItems: ["", ""]
       },
       {
-        name: "Firday",
+        name: "Friday",
         shortName: "Fri",
-        meals: {
-          breakfast: ["", ""],
-          lunch: ["", ""],
-          dinner: ["", ""]
-        },
-        snacks: ["", ""]
+        breakfastItems: ["", ""],
+        lunchItems: ["", ""],
+        dinnerItems: ["", ""],
+        snackItems: ["", ""]
       },      {
         name: "Saturday",
         shortName: "Sat",
-        meals: {
-          breakfast: ["", ""],
-          lunch: ["", ""],
-          dinner: ["", ""]
-        },
-        snacks: ["", ""]
+        breakfastItems: ["", ""],
+        lunchItems: ["", ""],
+        dinnerItems: ["", ""],
+        snackItems: ["", ""]
       }
     ]
   }
