@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&display=swap');
 
 .App {
   text-align: center;
@@ -13,7 +13,7 @@
   color: white;
 }
 
-.calendar {
+.calendar, .lists {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -21,13 +21,25 @@
   justify-content: space-evenly;
 }
 
-.day {
+.day, .list {
+  font-size: 2rem;
+  color: rgba(15, 15, 15, 0.8);
   font-family: 'Permanent Marker', cursive;
   background-color: whitesmoke;
   box-shadow: 5px 5px 5px 3px rgba(29, 29, 92, 0.2);
-  width: 11%;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
   margin-top: 1rem;
+}
+
+.day {
+  width: 11%;
+}
+
+.list {
+  width: 16%;
 }
 
 hr {
@@ -35,42 +47,28 @@ hr {
 }
 
 .meal {
-  font-family: sans-serif;
-  color: red;
+  padding-top: 2rem;
 }
 
 .breakfast {
-  
+  color: goldenrod;
 }
 
 .lunch {
-
+  color: darkolivegreen;
 }
 
 .dinner {
-
+  color: navy;
 }
 
 .snacks {
 
 }
 
-.food-item {
-
-}
-
-.food-item .breakfast {
-
-}
-
-.food-item .lunch {
-  
-}
-
-.food-item .dinner {
-  
-}
-
-.food-item .snacks {
-  
+.food-item, .list-item {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: rgba(15, 15, 15, 0.8);
+  font-family: 'Roboto', sans-serif;
 }

@@ -63,12 +63,72 @@ export default initialState = {
       {
         id: -1,
         name: "Produce",
-        items: ["", ""]
+        items: [
+          {
+            name: "",
+            quantity: 0
+          },
+          {
+            name: "",
+            quantity: 0
+          }
+        ]
       },
       {
         id: -1,
         name: "Meat",
-        items: ["", ""]
+        items: [
+          {
+            name: "",
+            quantity: 0
+          },
+          {
+            name: "",
+            quantity: 0
+          }
+        ]
+      },
+      {
+        id: -1,
+        name: "Dairy",
+        items: [
+          {
+            name: "",
+            quantity: 0
+          },
+          {
+            name: "",
+            quantity: 0
+          }
+        ]
+      },
+      {
+        id: -1,
+        name: "Dry Goods",
+        items: [
+          {
+            name: "",
+            quantity: 0
+          },
+          {
+            name: "",
+            quantity: 0
+          }
+        ]
+      },
+      {
+        id: -1,
+        name: "Frozen",
+        items: [
+          {
+            name: "",
+            quantity: 0
+          },
+          {
+            name: "",
+            quantity: 0
+          }
+        ]
       }
     ]
   }
