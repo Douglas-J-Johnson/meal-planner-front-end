@@ -49,13 +49,26 @@ export default initialState = {
         lunchItems: ["", ""],
         dinnerItems: ["", ""],
         snackItems: ["", ""]
-      },      {
+      },
+      {
         name: "Saturday",
         shortName: "Sat",
         breakfastItems: ["", ""],
         lunchItems: ["", ""],
         dinnerItems: ["", ""],
         snackItems: ["", ""]
+      }
+    ],
+    lists: [
+      {
+        id: -1,
+        name: "Produce",
+        items: ["", ""]
+      },
+      {
+        id: -1,
+        name: "Meat",
+        items: ["", ""]
       }
     ]
   }
