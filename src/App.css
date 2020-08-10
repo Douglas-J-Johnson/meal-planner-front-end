@@ -19,6 +19,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
+  padding-bottom: 1rem;
 }
 
 .day, .list {
@@ -47,7 +48,7 @@ hr {
 }
 
 .meal {
-  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .breakfast {
@@ -67,7 +68,7 @@ hr {
 }
 
 .food-item, .list-item {
-  line-height: 2.5rem;
+  line-height: 2rem;
   font-size: 1.5rem;
   color: rgba(15, 15, 15, 0.8);
   font-family: 'Roboto', sans-serif;

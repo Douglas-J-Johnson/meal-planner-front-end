@@ -1,10 +1,10 @@
 import React from 'react'
 import List from './list'
 
-export default function Lists({lists}) {
+export default function Lists({lists, addListItem}) {
     return (
         <div className="lists">
-            {lists.map((list, index) => < List key={index} list={list} />)}
+            {lists.map((list, index) => < List key={index} list={list} addListItem={addListItem} />)}
         </div>
     )
 }
