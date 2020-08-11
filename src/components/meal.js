@@ -1,10 +1,10 @@
 import React from 'react'
 import FoodItem from './foodItem'
 
-export default function meal({day, meal, mealItems, addMealItem}) {
+export default function meal({dayIndex, meal, mealItems, addMealItem}) {
     return (
         <div className={'meal ' + meal.toLowerCase()}>
-            <div onClick={addMealItem} data-day={day} data-meal={meal}>
+            <div className="title" onClick={addMealItem} data-day-index={dayIndex} data-meal={meal}>
                 {meal}
             </div>
             {mealItems.map((mealItem, index) => < FoodItem key={index} meal={meal.toLowerCase()} foodItem={mealItem} />)}
