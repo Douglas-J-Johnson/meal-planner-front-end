@@ -9,31 +9,38 @@ class App extends React.Component {
 
   addMealItem = (event) => {
     const dayIndex = event.target.dataset.dayIndex
-    const meal = event.target.dataset.meal
+    const mealIndex = event.target.dataset.mealIndex
+
+    let days = this.state.days
+    days[dayIndex][mealIndex].items.push("")
+    this.setState({days})
+  }
+
+  editMealItem = (event) => {
+    const dayIndex = event.target.dataset.dayIndex
+    const mealIndex = event.target.dataset.mealIndex
+    const mealItemIndex = event.target.dataset.mealItemIndex
+
     let days = this.state.days
 
-    console.log(dayIndex, meal)
-
-    if(meal === "Breakfast") {
-      days[dayIndex].breakfastItems.push("")
-    }
-    else if(meal === "Lunch") {
-      days[dayIndex].lunchItems.push("")
-    }
-    else if(meal == "Dinner") {
-      days[dayIndex].dinnerItems.push("")
-    }
-    else {
-      days[dayIndex].snackItems.push("")
-    }
 
     this.setState({days})
   }
   
   addListItem = (event) => {
     const listIndex = event.target.dataset.listIndex
+
     let lists = this.state.lists
-    lists[listIndex].items.push({name: "test", quantity: 100})
+    lists[listIndex].items.push({name: "", quantity: 1})
+    this.setState({lists})
+  }
+
+  editListItem = (event) => {
+    const listIndex = event.target.dataset.listIndex
+    const listItemIndex = event.target.dataset.listItemIndex
+
+    let lists = this.state.lists
+
 
     this.setState({lists})
   }
@@ -42,8 +49,16 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="App-header"></div>
-        < Calendar days={this.state.days} addMealItem={this.addMealItem} />
-        < Lists lists={this.state.lists} addListItem={this.addListItem} />
+        < Calendar
+          days={this.state.days}
+          addMealItem={this.addMealItem}
+          editMealItem={this.editMealItem}
+        />
+        < Lists
+          lists={this.state.lists}
+          addListItem={this.addListItem}
+          editListItem={this.editListItem}
+        />
       </div>
     );
   }

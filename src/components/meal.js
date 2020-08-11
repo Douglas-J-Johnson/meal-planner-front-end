@@ -1,13 +1,23 @@
 import React from 'react'
-import FoodItem from './foodItem'
+import MealItem from './mealItem'
 
-export default function meal({dayIndex, meal, mealItems, addMealItem}) {
+export default function meal({dayIndex, mealName, mealIndex, mealItems, addMealItem, editMealItem}) {
     return (
-        <div className={'meal ' + meal.toLowerCase()}>
-            <div className="title" onClick={addMealItem} data-day-index={dayIndex} data-meal={meal}>
-                {meal}
+        <div className={'meal ' + mealName.toLowerCase()}>
+            <div className="title" onClick={addMealItem} data-day-index={dayIndex} data-meal-index={mealIndex}>
+                {mealName}
             </div>
-            {mealItems.map((mealItem, index) => < FoodItem key={index} meal={meal.toLowerCase()} foodItem={mealItem} />)}
+            {mealItems.map((mealItem, index) =>
+                < MealItem
+                    key={index}
+                    dayIndex={dayIndex}
+                    mealName={mealName.toLowerCase()}
+                    mealIndex={mealIndex}
+                    mealItem={mealItem}
+                    mealItemIndex={index}
+                    editMealItem={editMealItem}
+                />
+            )}
         </div>
     )
 }

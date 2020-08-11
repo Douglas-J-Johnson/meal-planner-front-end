@@ -79,9 +79,34 @@ hr {
 
 }
 
-.food-item, .list-item {
-  min-height: 1.75rem;
-  font-size: 1.25rem;
+.meal-item, .list-item {
   color: rgba(15, 15, 15, 0.8);
+  width: 90%;
+}
+
+.meal-item, .list-item-quantity, .list-item-name {
+  font-size: 1.25rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: whitesmoke;
   font-family: 'Roboto', sans-serif;
+  cursor: text;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.list-item-quantity {
+  width: 20%;
+}
+
+.list-item-name {
+  width: 70%;
 }
