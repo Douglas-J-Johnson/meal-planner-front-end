@@ -84,7 +84,7 @@ hr {
   width: 90%;
 }
 
-.meal-item, .list-item-quantity, .list-item-name {
+.meal-item, .list-item-quantity, .list-item-quantity-zero, .list-item-name {
   font-size: 1.25rem;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -103,8 +103,12 @@ hr {
   justify-content: space-between;
 }
 
-.list-item-quantity {
+.list-item-quantity, .list-item-quantity-zero {
   width: 20%;
+}
+
+.list-item-quantity-zero {
+  color: whitesmoke;
 }
 
 .list-item-name {

@@ -22,8 +22,6 @@ class App extends React.Component {
     const mealItemIndex = event.target.dataset.mealItemIndex
     const newValue = event.target.value
 
-    console.log(dayIndex + mealIndex + mealItemIndex, newValue)
-
     let days = this.state.days
     days[dayIndex].meals[mealIndex].items[mealItemIndex] = newValue
     this.setState({days})
@@ -44,13 +42,16 @@ class App extends React.Component {
     const newValue = event.target.value
 
     let lists = this.state.lists
-    lists[listIndex].items[listItemIndex][attribute] = newValue
-    this.setState({lists})
+    if (attribute === "quantity" && newValue < 0) {
+      // add message to user?
+    }
+    else {
+      lists[listIndex].items[listItemIndex][attribute] = newValue
+      this.setState({lists})
+    }
   }
 
   render() {
-    console.log(this.state)
-
     return (
       <div className="App">
         <div className="App-header"></div>

@@ -77,7 +77,7 @@ export default initialState = {
     {
       name: "Produce",
       items: [
-        {name: "", quantity: 0},
+        {name: "", quantity: 1},
         {name: "", quantity: 0},
         {name: "", quantity: 0},
         {name: "", quantity: 0},

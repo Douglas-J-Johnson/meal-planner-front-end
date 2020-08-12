@@ -5,7 +5,7 @@ export default function ListItem({listIndex, listItem, listItemIndex, editListIt
         <div className="list-item">
             <input
                 type="number"
-                className="list-item-quantity"
+                className={listItem.quantity > 0 ? "list-item-quantity" : "list-item-quantity-zero"}
                 data-list-index={listIndex}
                 data-list-item-index={listItemIndex}
                 data-list-item-attribute="quantity"
