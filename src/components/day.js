@@ -12,9 +12,8 @@ export default function Day({day, dayIndex, addMealItem, editMealItem}) {
                 < Meal
                     key={index}
                     dayIndex={dayIndex}
-                    mealName={meal.name}
+                    meal={meal}
                     mealIndex={index}
-                    mealItems={meal.items}
                     addMealItem={addMealItem}
                     editMealItem={editMealItem}
                 />

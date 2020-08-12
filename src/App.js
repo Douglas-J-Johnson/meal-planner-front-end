@@ -12,7 +12,7 @@ class App extends React.Component {
     const mealIndex = event.target.dataset.mealIndex
 
     let days = this.state.days
-    days[dayIndex][mealIndex].items.push("")
+    days[dayIndex].meals[mealIndex].items.push("")
     this.setState({days})
   }
 
@@ -20,10 +20,12 @@ class App extends React.Component {
     const dayIndex = event.target.dataset.dayIndex
     const mealIndex = event.target.dataset.mealIndex
     const mealItemIndex = event.target.dataset.mealItemIndex
+    const newValue = event.target.value
+
+    console.log(dayIndex + mealIndex + mealItemIndex, newValue)
 
     let days = this.state.days
-
-
+    days[dayIndex].meals[mealIndex].items[mealItemIndex] = newValue
     this.setState({days})
   }
   
@@ -38,14 +40,17 @@ class App extends React.Component {
   editListItem = (event) => {
     const listIndex = event.target.dataset.listIndex
     const listItemIndex = event.target.dataset.listItemIndex
+    const attribute = event.target.dataset.listItemAttribute
+    const newValue = event.target.value
 
     let lists = this.state.lists
-
-
+    lists[listIndex].items[listItemIndex][attribute] = newValue
     this.setState({lists})
   }
 
   render() {
+    console.log(this.state)
+
     return (
       <div className="App">
         <div className="App-header"></div>

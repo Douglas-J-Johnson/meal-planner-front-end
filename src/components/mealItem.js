@@ -10,7 +10,7 @@ export default function MealItem({dayIndex, mealName, mealIndex, mealItem, mealI
                 data-meal-index={mealIndex}
                 data-meal-item-index={mealItemIndex}
                 onChange={editMealItem}
-                value={mealItem.name}
+                value={mealItem}
             />
         </>    
     )
